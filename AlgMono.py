@@ -110,14 +110,6 @@ V4z = Z1 - Z4
 
 e = float((3*v^2)/(2*c^2)) + float(V^2/(2*c^2)) + float((G*M)/(R*c^2))
 
-"""
-#Distancia com correção
-D1 = c*(tr1-Te1/(1-e))
-D2 = c*(tr2-Te2/(1-e))
-D3 = c*(tr3-Te3/(1-e))
-D4 = c*(tr4-Te4/(1-e))
-"""
-
 #Distancia sem correção
 
 D1 = c*tr1
