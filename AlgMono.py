@@ -59,7 +59,6 @@ M = 5972e24 # Massa da Terra (kg)
 R = 6371000 # Raio da Terra (m)
 G = 6.67408e-11 # Constante Gravitacional Universal (m^3 kg^-1 s^-2)
 
-
 #tempos
 
 tr1 = 0.00505783 #tempo de recepção
@@ -116,7 +115,6 @@ D1 = c*tr1
 D2 = c*tr2
 D3 = c*tr3
 D4 = c*tr4
-
 
 X = (-0.5*(D1**2*V2y*V3z-D1**2*V2y*V4z-D1**2*V2z*V3y+D1**2*V2z*V4y
            +D1**2*V3y*V4z-D1**2*V3z*V4y-D2**2*V3y*V4z+D2**2*V3z*V4y
