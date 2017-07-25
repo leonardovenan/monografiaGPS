@@ -65,7 +65,7 @@ V4z = Z1 - Z4
 
 #Coreção
 
-e = float((3*v^2)/(2*c^2)) + float(V^2/(2*c^2)) + float((G*M)/(R*c^2))
+e = float((3*v^2)/(2*c^2)) - float(V^2/(2*c^2)) - float((G*M)/(R*c^2))
 
 #Distancia sem correção
 
@@ -178,63 +178,5 @@ print "Valores com correção\n\n"
 print X
 print Y
 print Z
-
-
-"""
-para/
-
-Digite a posicao X do primeiro satelite: 100
-
-Digite a posicao Y do primeiro satelite: 200
-
-Digite a posicao Z do primeiro satelite: 200
-
-Digite a posicao X do segundo satelite: 110
-
-Digite a posicao Y do segundo satelite: 140
-
-Digite a posicao Z do segundo satelite: 400
-
-Digite a posicao X do terceiro satelite: 230
-
-Digite a posicao Y do terceiro satelite: 340
-
-Digite a posicao Z do terceiro satelite: 115
-
-Digite a posicao X do quarto satelite: 50
-
-Digite a posicao Y do quarto satelite: 234
-
-Digite a posicao Z do qaurto satelite: 320
-
-Sem correção
-
--17327601028.5
--7028478080.95
--14644689638.6
-
-Com correção
-
--17380792247.4
--7026543881.03
--14678419719.2
-
-"""
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
