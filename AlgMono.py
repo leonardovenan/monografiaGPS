@@ -65,7 +65,7 @@ V4z = Z1 - Z4
 
 #Coreção
 
-e = float((3*v^2)/(2*c^2)) - float(V^2/(2*c^2)) - float((G*M)/(R*c^2))
+e = ((3*v**2)/float((2*c**2)) - V**2/float((2*c**2)) - (G*M)/float((R*c**2)))
 
 #Distancia sem correção
 
