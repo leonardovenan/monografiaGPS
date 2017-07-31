@@ -116,7 +116,7 @@ Z = (-0.5*(D1**2*V2x*V3y-D1**2*V2x*V4y-D1**2*V2y*V3x+D1**2*V2y*V4x
            +V3y*V4x*Y1**2-V3y*V4x*Y2**2+V3y*V4x*Z1**2-V3y*V4x*Z2**2)/
            float(V2x*V3y*V4z-V2x*V3z*V4y-V2y*V3x*V4z+V2y*V3z*V4x+V2z*V3x*V4y-V2z*V3y*V4x))
 
-print "Valores sem correção\n\n"
+print "\n\nValores sem correção\n"
 
 print X
 print Y
@@ -173,10 +173,53 @@ Z = (-0.5*(D1**2*V2x*V3y-D1**2*V2x*V4y-D1**2*V2y*V3x+D1**2*V2y*V4x
            +V3y*V4x*Y1**2-V3y*V4x*Y2**2+V3y*V4x*Z1**2-V3y*V4x*Z2**2)/
            float(V2x*V3y*V4z-V2x*V3z*V4y-V2y*V3x*V4z+V2y*V3z*V4x+V2z*V3x*V4y-V2z*V3y*V4x))
 
-print "Valores com correção\n\n"
+print "\nValores com correção\n"
 
 print X
 print Y
 print Z
 
+"""
+
+Teste Satélite 3D
+
+
+Digite a posicao X do primeiro satelite: 1550
+
+Digite a posicao Y do primeiro satelite: 100
+
+Digite a posicao Z do primeiro satelite: 2000
+
+Digite a posicao X do segundo satelite: 3500
+
+Digite a posicao Y do segundo satelite: 350
+
+Digite a posicao Z do segundo satelite: 1250
+
+Digite a posicao X do terceiro satelite: 1000
+
+Digite a posicao Y do terceiro satelite: 432
+
+Digite a posicao Z do terceiro satelite: 2100
+
+Digite a posicao X do quarto satelite: 3250
+
+Digite a posicao Y do quarto satelite: 1500
+
+Digite a posicao Z do qaurto satelite: 2450
+
+
+Valores sem correção
+
+1762910763.92
+-5030838459.11
+6480623890.13
+
+Valores com correção
+
+175705620.852
+-538720801.397
+270589219.751
+
+"""
 
