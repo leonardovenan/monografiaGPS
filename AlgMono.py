@@ -5,13 +5,14 @@ Created on Wed Jun 07 18:18:50 2017
 @author: Leonardo Venancio - Monografia
 """
 #from math import sqrt
+import sys
 
 print "Teste Satélite 3D\n"
 
 #dados
 
 c = 299792458 #velocidade da Luz (m/s)
-v = 4000 # velocidade orbital dos satélites (m/s)
+v = 3900 # velocidade orbital dos satélites (m/s)
 V = 465 # velocidade de rotação da Terra (m/s)
 M = 5972e24 # Massa da Terra (kg)
 R = 6371000 # Raio da Terra (m)
@@ -30,7 +31,7 @@ Te3 = 0.00574326
 Te4 = 0.00416411
 
 #Satélites
-
+print "Tais valores NÃO podem ser COLINEARRES ou COPLANARES\n"
 #1
 #####################################################################
 X1 = float(raw_input('Digite a posicao X do primeiro satelite: '))
@@ -50,7 +51,7 @@ Z3 = float(raw_input('Digite a posicao Z do terceiro satelite: '))
 #####################################################################
 X4 = float(raw_input('Digite a posicao X do quarto satelite: '))
 Y4 = float(raw_input('Digite a posicao Y do quarto satelite: '))
-Z4 = float(raw_input('Digite a posicao Z do qaurto satelite: '))
+Z4 = float(raw_input('Digite a posicao Z do quarto satelite: '))
 #####################################################################
 
 V2x = X1 - X2
@@ -63,6 +64,16 @@ V2z = Z1 - Z2
 V3z = Z1 - Z3
 V4z = Z1 - Z4
 
+#tais vetores não podem ser coplanares ou colineares
+
+Vx = V2x + V3x + V4x
+Vy = V2y + V3y + V4y
+Vz = V2z + V3z + V4z
+
+if(Vx==0 and Vy==0 and Vz==0):
+    print ("\n--Valores invalidos. Por favor, tente novamente--\n")
+    sys.exit()
+    
 #Coreção
 
 e = ((3*v**2)/float((2*c**2)) - V**2/float((2*c**2)) - (G*M)/float((R*c**2)))
@@ -180,46 +191,47 @@ print Y
 print Z
 
 """
-
 Teste Satélite 3D
 
+Tais valores NÃO podem ser COLINEARRES ou COPLANARES
 
-Digite a posicao X do primeiro satelite: 1550
 
-Digite a posicao Y do primeiro satelite: 100
+Digite a posicao X do primeiro satelite: 1000
+
+Digite a posicao Y do primeiro satelite: 1500
 
 Digite a posicao Z do primeiro satelite: 2000
 
-Digite a posicao X do segundo satelite: 3500
+Digite a posicao X do segundo satelite: 550
 
-Digite a posicao Y do segundo satelite: 350
+Digite a posicao Y do segundo satelite: 1200
 
-Digite a posicao Z do segundo satelite: 1250
+Digite a posicao Z do segundo satelite: 1000
 
-Digite a posicao X do terceiro satelite: 1000
+Digite a posicao X do terceiro satelite: 780
 
-Digite a posicao Y do terceiro satelite: 432
+Digite a posicao Y do terceiro satelite: 3200
 
-Digite a posicao Z do terceiro satelite: 2100
+Digite a posicao Z do terceiro satelite: 450
 
-Digite a posicao X do quarto satelite: 3250
+Digite a posicao X do quarto satelite: 1500
 
-Digite a posicao Y do quarto satelite: 1500
+Digite a posicao Y do quarto satelite: 2200
 
-Digite a posicao Z do qaurto satelite: 2450
+Digite a posicao Z do qaurto satelite: 1000
 
 
 Valores sem correção
 
-1762910763.92
--5030838459.11
-6480623890.13
+756019467.967
+832338488.39
+2090597250.64
 
 Valores com correção
 
-175705620.852
--538720801.397
-270589219.751
+-302175513.152
+-51681291.8781
+146485537.989
 
 """
 
