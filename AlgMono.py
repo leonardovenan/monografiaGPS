@@ -33,6 +33,8 @@ Te4 = 0.00416411
 #Satélites
 print "Tais valores NÃO podem ser COLINEARRES ou COPLANARES\n"
 #1
+print "Levando em conta que os satélites não estão no mesmo lugar, digite suas posicoes. \n"
+
 #####################################################################
 X1 = float(raw_input('Digite a posicao X do primeiro satelite: '))
 Y1 = float(raw_input('Digite a posicao Y do primeiro satelite: '))
@@ -97,21 +99,23 @@ if(Vx==0 and Vy==0 and Vz==0):
     V2z = Z1 - Z2
     V3z = Z1 - Z3
     V4z = Z1 - Z4
+    
+    print("\nNovas Posicoes:\n")
 
-print("\nNovas Posicoes\n")
+    print "posicao X do primeiro satelite: ", X1
+    print "posicao Y do primeiro satelite: ", Y1
+    print "posicao Z do primeiro satelite: ", Z1
+    print "posicao X do segundo satelite: ", X2
+    print "posicao Y do segundo satelite: ", Y2
+    print "posicao Z do segundo satelite: ", Z2
+    print "posicao X do terceiro satelite: ", X3
+    print "posicao Y do terceiro satelite: ", Y3
+    print "posicao Z do terceiro satelite: ", Z3
+    print "posicao X do quarto satelite: ", X4
+    print "posicao Y do quarto satelite: ", Y4
+    print "posicao Z do quarto satelite: ", Z4
 
-print "posicao X do primeiro satelite: ", X1
-print "posicao Y do primeiro satelite: ", Y1
-print "posicao Z do primeiro satelite: ", Z1
-print "posicao X do segundo satelite: ", X2
-print "posicao Y do segundo satelite: ", Y2
-print "posicao Z do segundo satelite: ", Z2
-print "posicao X do terceiro satelite: ", X3
-print "posicao Y do terceiro satelite: ", Y3
-print "posicao Z do terceiro satelite: ", Z3
-print "posicao X do quarto satelite: ", X4
-print "posicao Y do quarto satelite: ", Y4
-print "posicao Z do quarto satelite: ", Z4
+
 
 #Coreção
 
