@@ -70,7 +70,7 @@ Vx = V2x*(V3x*V4x)
 Vy = V2y*(V3y*V4y)
 Vz = V2z*(V3z*V4z)
 
-while(Vx==0 and Vy==0 and Vz==0):
+if(Vx==0 and Vy==0 and Vz==0):
     print ("\n--Valores invalidos. Valores sendo embaralhados...--\n")
     lista_posicao = [X1,X2,X3,X4,Y1,Y2,Y3,Y4,Z1,Z2,Z3,Z4]
     random.shuffle(lista_posicao)
