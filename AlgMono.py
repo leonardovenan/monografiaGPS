@@ -112,7 +112,6 @@ print "posicao Z do terceiro satelite: ", Z3
 print "posicao X do quarto satelite: ", X4
 print "posicao Y do quarto satelite: ", Y4
 print "posicao Z do quarto satelite: ", Z4
-    
 
 #Coreção
 
