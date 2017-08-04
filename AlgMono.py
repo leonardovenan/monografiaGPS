@@ -6,6 +6,7 @@ Created on Wed Jun 07 18:18:50 2017
 """
 #from math import sqrt
 import random
+import numpy as np
 
 print "Teste Satélite 3D\n"
 
@@ -68,11 +69,14 @@ V4z = Z1 - Z4
 
 #tais vetores não podem ser coplanares ou colineares
 
-Vx = V2x*(V3x*V4x)
-Vy = V2y*(V3y*V4y)
-Vz = V2z*(V3z*V4z)
+V2 = [V2x, V2y, V2z]
+V3 = [V3x, V3y, V3z]
+V4 = [V4x, V4y, V4z]
 
-if(Vx==0 and Vy==0 and Vz==0):
+V = np.dot(V2,(np.cross(V3,V4)))
+
+
+if(V==0):
     print ("\n--Valores invalidos. Valores sendo embaralhados...--\n")
     lista_posicao = [X1, X2, X3, X4, Y1, Y2, Y3, Y4, Z1, Z2, Z3, Z4]
     random.shuffle(lista_posicao)
