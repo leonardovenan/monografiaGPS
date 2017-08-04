@@ -5,7 +5,7 @@ Created on Wed Jun 07 18:18:50 2017
 @author: Leonardo Venancio - Monografia
 """
 #from math import sqrt
-import sys
+import random
 
 print "Teste Satélite 3D\n"
 
@@ -51,7 +51,7 @@ Z3 = float(raw_input('Digite a posicao Z do terceiro satelite: '))
 #####################################################################
 X4 = float(raw_input('Digite a posicao X do quarto satelite: '))
 Y4 = float(raw_input('Digite a posicao Y do quarto satelite: '))
-Z4 = float(raw_input('Digite a posicao Z do quarto satelite: '))
+Z4 = float(raw_input('Digite a posicao Z do qaurto satelite: '))
 #####################################################################
 
 V2x = X1 - X2
@@ -66,14 +66,54 @@ V4z = Z1 - Z4
 
 #tais vetores não podem ser coplanares ou colineares
 
-Vx = V2x + V3x + V4x
-Vy = V2y + V3y + V4y
-Vz = V2z + V3z + V4z
+Vx = V2x*(V3x*V4x)
+Vy = V2y*(V3y*V4y)
+Vz = V2z*(V3z*V4z)
 
-if(Vx==0 and Vy==0 and Vz==0):
-    print ("\n--Valores invalidos. Por favor, tente novamente--\n")
-    sys.exit()
+while(Vx==0 and Vy==0 and Vz==0):
+    print ("\n--Valores invalidos. Valores sendo embaralhados...--\n")
+    lista_posicao = [X1,X2,X3,X4,Y1,Y2,Y3,Y4,Z1,Z2,Z3,Z4]
+    random.shuffle(lista_posicao)
     
+    X1 = lista_posicao[0]
+    X2 = lista_posicao[1]
+    X3 = lista_posicao[2]
+    X4 = lista_posicao[3]
+    Y1 = lista_posicao[4]
+    Y2 = lista_posicao[5]
+    Y3 = lista_posicao[6]
+    Y4 = lista_posicao[7]
+    Z1 = lista_posicao[8]
+    Z2 = lista_posicao[9]
+    Z3 = lista_posicao[10]
+    Z4 = lista_posicao[11]
+
+    V2x = X1 - X2
+    V3x = X1 - X3
+    V4x = X1 - X4
+    V2y = Y1 - Y2
+    V3y = Y1 - Y3
+    V4y = Y1 - Y4
+    V2z = Z1 - Z2
+    V3z = Z1 - Z3
+    V4z = Z1 - Z4
+
+print("\nNovas Posicoes\n")
+
+print "posicao X do primeiro satelite: ", X1
+print "posicao Y do primeiro satelite: ", Y1
+print "posicao Z do primeiro satelite: ", Z1
+print "posicao X do segundo satelite: ", X2
+print "posicao Y do segundo satelite: ", Y2
+print "posicao Z do segundo satelite: ", Z2
+print "posicao X do terceiro satelite: ", X3
+print "posicao Y do terceiro satelite: ", Y3
+print "posicao Z do terceiro satelite: ", Z3
+print "posicao X do quarto satelite: ", X4
+print "posicao Y do quarto satelite: ", Y4
+print "posicao Z do quarto satelite: ", Z4
+    
+
 #Coreção
 
 e = ((3*v**2)/float((2*c**2)) - V**2/float((2*c**2)) - (G*M)/float((R*c**2)))
@@ -191,47 +231,46 @@ print Y
 print Z
 
 """
+
 Teste Satélite 3D
 
-Tais valores NÃO podem ser COLINEARRES ou COPLANARES
 
+Digite a posicao X do primeiro satelite: 1550
 
-Digite a posicao X do primeiro satelite: 1000
-
-Digite a posicao Y do primeiro satelite: 1500
+Digite a posicao Y do primeiro satelite: 100
 
 Digite a posicao Z do primeiro satelite: 2000
 
-Digite a posicao X do segundo satelite: 550
+Digite a posicao X do segundo satelite: 3500
 
-Digite a posicao Y do segundo satelite: 1200
+Digite a posicao Y do segundo satelite: 350
 
-Digite a posicao Z do segundo satelite: 1000
+Digite a posicao Z do segundo satelite: 1250
 
-Digite a posicao X do terceiro satelite: 780
+Digite a posicao X do terceiro satelite: 1000
 
-Digite a posicao Y do terceiro satelite: 3200
+Digite a posicao Y do terceiro satelite: 432
 
-Digite a posicao Z do terceiro satelite: 450
+Digite a posicao Z do terceiro satelite: 2100
 
-Digite a posicao X do quarto satelite: 1500
+Digite a posicao X do quarto satelite: 3250
 
-Digite a posicao Y do quarto satelite: 2200
+Digite a posicao Y do quarto satelite: 1500
 
-Digite a posicao Z do qaurto satelite: 1000
+Digite a posicao Z do qaurto satelite: 2450
 
 
 Valores sem correção
 
-756019467.967
-832338488.39
-2090597250.64
+1762910763.92
+-5030838459.11
+6480623890.13
 
 Valores com correção
 
--302175513.152
--51681291.8781
-146485537.989
+175705620.862
+-538720801.425
+270589219.776
 
 """
 
