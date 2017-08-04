@@ -238,46 +238,49 @@ print Y
 print Z
 
 """
-
 Teste Satélite 3D
 
+Tais valores NÃO podem ser COLINEARRES ou COPLANARES
 
-Digite a posicao X do primeiro satelite: 1550
+Levando em conta que os satélites não estão no mesmo lugar, digite suas posicoes. 
 
-Digite a posicao Y do primeiro satelite: 100
 
-Digite a posicao Z do primeiro satelite: 2000
+Digite a posicao X do primeiro satelite: 1000
 
-Digite a posicao X do segundo satelite: 3500
+Digite a posicao Y do primeiro satelite: 2000
 
-Digite a posicao Y do segundo satelite: 350
+Digite a posicao Z do primeiro satelite: 3000
 
-Digite a posicao Z do segundo satelite: 1250
+Digite a posicao X do segundo satelite: 550
 
-Digite a posicao X do terceiro satelite: 1000
+Digite a posicao Y do segundo satelite: 1450
 
-Digite a posicao Y do terceiro satelite: 432
+Digite a posicao Z do segundo satelite: 2100
 
-Digite a posicao Z do terceiro satelite: 2100
+Digite a posicao X do terceiro satelite: 670
 
-Digite a posicao X do quarto satelite: 3250
+Digite a posicao Y do terceiro satelite: 1700
 
-Digite a posicao Y do quarto satelite: 1500
+Digite a posicao Z do terceiro satelite: 2011
 
-Digite a posicao Z do qaurto satelite: 2450
+Digite a posicao X do quarto satelite: 1100
+
+Digite a posicao Y do quarto satelite: 1050
+
+Digite a posicao Z do qaurto satelite: 1001
 
 
 Valores sem correção
 
-1762910763.92
--5030838459.11
-6480623890.13
+4169833951.26
+880005701.909
+355644980.411
 
 Valores com correção
 
-175705620.862
--538720801.425
-270589219.776
+333845685.577
+-1046869316.0
+781347791.96
 
 """
 
