@@ -76,7 +76,7 @@ V4 = [V4x, V4y, V4z]
 V = np.dot(V2,(np.cross(V3,V4)))
 
 
-if(V==0):
+while(V==0):
     print ("\n--Valores invalidos. Valores sendo embaralhados...--\n")
     lista_posicao = [X1, X2, X3, X4, Y1, Y2, Y3, Y4, Z1, Z2, Z3, Z4]
     random.shuffle(lista_posicao)
@@ -103,6 +103,13 @@ if(V==0):
     V2z = Z1 - Z2
     V3z = Z1 - Z3
     V4z = Z1 - Z4
+    
+    
+    V2 = [V2x, V2y, V2z]
+    V3 = [V3x, V3y, V3z]
+    V4 = [V4x, V4y, V4z]
+
+    V = np.dot(V2,(np.cross(V3,V4)))
     
     print("\nNovas Posicoes:\n")
 
