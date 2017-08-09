@@ -258,37 +258,38 @@ Digite a posicao X do primeiro satelite: 10000
 
 Digite a posicao Y do primeiro satelite: 15000
 
-Digite a posicao Z do primeiro satelite: 20200
+Digite a posicao Z do primeiro satelite: 20200000
 
 Digite a posicao X do segundo satelite: 11045
 
 Digite a posicao Y do segundo satelite: 17050
 
-Digite a posicao Z do segundo satelite: 20350
+Digite a posicao Z do segundo satelite: 20350000
 
 Digite a posicao X do terceiro satelite: 12540
 
 Digite a posicao Y do terceiro satelite: 14561
 
-Digite a posicao Z do terceiro satelite: 21033
+Digite a posicao Z do terceiro satelite: 21033000
 
 Digite a posicao X do quarto satelite: 11011
 
 Digite a posicao Y do quarto satelite: 13030
 
-Digite a posicao Z do quarto satelite: 22023
+Digite a posicao Z do quarto satelite: 22023000
+
 
 Valores sem correção
 
-X =  -498529202.411
-Y =  -952939789.293
-Z =  -1373125539.37
+X =  -704213403.766
+Y =  -920231050.093
+Z =  19887768.0193
 
 Valores com correção
 
-X =  -496678974.787
-Y =  -946834300.034
-Z =  -1366029422.04
+X =  -704213401.909
+Y =  -920231043.959
+Z =  19887768.0265
 
 
 """
