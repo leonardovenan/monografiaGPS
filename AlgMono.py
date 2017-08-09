@@ -26,7 +26,7 @@ tr2 = 0.00923206
 tr3 = 0.00836090
 tr4 = 0.00712225
 
-Te1 = 0.00390733 #tempo de emissão 
+Te1 = 0.00390733 #tempo de emissão satélites
 Te2 = 0.00813098
 Te3 = 0.00574326
 Te4 = 0.00416411
@@ -132,10 +132,10 @@ if(Ve==0):
 
 #Distancia sem correção
 
-D1 = c*tr1
-D2 = c*tr2
-D3 = c*tr3
-D4 = c*tr4
+D1 = c*(tr1-Te1)
+D2 = c*(tr2-Te2)
+D3 = c*(tr3-Te3)
+D4 = c*(tr4-Te4)
 
 X = (-0.5*(D1**2*V2y*V3z-D1**2*V2y*V4z-D1**2*V2z*V3y+D1**2*V2z*V4y
            +D1**2*V3y*V4z-D1**2*V3z*V4y-D2**2*V3y*V4z+D2**2*V3z*V4y
@@ -280,16 +280,15 @@ Digite a posicao Z do quarto satelite: 22023000
 
 Valores sem correção
 
-X =  -704213403.766
-Y =  -920231050.093
-Z =  19887768.0193
+X =  -260372007.47
+Y =  71182004.4791
+Z =  21149732.326
 
 Valores com correção
 
-X =  -704213401.909
-Y =  -920231043.959
-Z =  19887768.0265
-
+X =  -260372212.948
+Y =  71181985.9993
+Z =  21149732.1516
 
 """
 
