@@ -7,6 +7,7 @@ Created on Wed Jun 07 18:18:50 2017
 #from math import sqrt
 import numpy as np
 import sys
+from math import sqrt
 
 print "Teste Satélite 3D\n"
 
@@ -185,6 +186,10 @@ print "X = ",X
 print "Y = ",Y
 print "Z = ",Z
 
+A = X
+B = Y
+C = Z
+
 ###########################################################################################################
 #Correção
 
@@ -245,6 +250,10 @@ print "X = ",X
 print "Y = ",Y
 print "Z = ",Z
 
+diferenca = sqrt((A - X)**2 + (B-Y)**2 + (C-Z)**2)
+
+print "\nA diferença de pontos sem e com a correção é = ", diferenca
+
 """
 Teste Satélite 3D
 
@@ -289,6 +298,8 @@ Valores com correção
 X =  -260372212.948
 Y =  71181985.9993
 Z =  21149732.1516
+
+A diferença de pontos sem e com a correção é =  206.307343193
 
 """
 
