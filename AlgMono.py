@@ -54,7 +54,7 @@ Z3 = float(raw_input('Digite a posicao Z do terceiro satelite: '))
 #####################################################################
 X4 = float(raw_input('Digite a posicao X do quarto satelite: '))
 Y4 = float(raw_input('Digite a posicao Y do quarto satelite: '))
-Z4 = float(raw_input('Digite a posicao Z do qaurto satelite: '))
+Z4 = float(raw_input('Digite a posicao Z do quarto satelite: '))
 #####################################################################
 
 V2x = X1 - X2
@@ -185,9 +185,9 @@ Z = (-0.5*(D1**2*V2x*V3y-D1**2*V2x*V4y-D1**2*V2y*V3x+D1**2*V2y*V4x
 
 print "\n\nValores sem correção\n"
 
-print X
-print Y
-print Z
+print "X = ",X
+print "Y = ",Y
+print "Z = ",Z
 
 ###########################################################################################################
 
@@ -242,54 +242,54 @@ Z = (-0.5*(D1**2*V2x*V3y-D1**2*V2x*V4y-D1**2*V2y*V3x+D1**2*V2y*V4x
 
 print "\nValores com correção\n"
 
-print X
-print Y
-print Z
+print "X = ",X
+print "Y = ",Y
+print "Z = ",Z
 
 """
 Teste Satélite 3D
 
 Tais valores NÃO podem ser COLINEARRES ou COPLANARES
 
-Levando em conta que os satélites não estão no mesmo lugar, digite suas posicoes. 
+Sabendo que os satélites não estão no mesmo lugar, digite suas posicoes. 
 
 
-Digite a posicao X do primeiro satelite: 1000
+Digite a posicao X do primeiro satelite: 10000
 
-Digite a posicao Y do primeiro satelite: 2000
+Digite a posicao Y do primeiro satelite: 15000
 
-Digite a posicao Z do primeiro satelite: 3000
+Digite a posicao Z do primeiro satelite: 20200
 
-Digite a posicao X do segundo satelite: 550
+Digite a posicao X do segundo satelite: 11045
 
-Digite a posicao Y do segundo satelite: 1450
+Digite a posicao Y do segundo satelite: 17050
 
-Digite a posicao Z do segundo satelite: 2100
+Digite a posicao Z do segundo satelite: 20350
 
-Digite a posicao X do terceiro satelite: 670
+Digite a posicao X do terceiro satelite: 12540
 
-Digite a posicao Y do terceiro satelite: 1700
+Digite a posicao Y do terceiro satelite: 14561
 
-Digite a posicao Z do terceiro satelite: 2011
+Digite a posicao Z do terceiro satelite: 21033
 
-Digite a posicao X do quarto satelite: 1100
+Digite a posicao X do quarto satelite: 11011
 
-Digite a posicao Y do quarto satelite: 1050
+Digite a posicao Y do quarto satelite: 13030
 
-Digite a posicao Z do qaurto satelite: 1001
-
+Digite a posicao Z do quarto satelite: 22023
 
 Valores sem correção
 
-4169833951.26
-880005701.909
-355644980.411
+X =  -498529202.411
+Y =  -952939789.293
+Z =  -1373125539.37
 
 Valores com correção
 
-333845685.577
--1046869316.0
-781347791.96
+X =  -496678974.787
+Y =  -946834300.034
+Z =  -1366029422.04
+
 
 """
 
