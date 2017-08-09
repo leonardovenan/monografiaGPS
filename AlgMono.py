@@ -252,7 +252,7 @@ print "Z = ",Z
 
 diferenca = sqrt((A - X)**2 + (B-Y)**2 + (C-Z)**2)
 
-print "\nA diferença de pontos sem e com a correção é = ", diferenca
+print "\nA diferença de pontos sem e com a correção é = ", diferenca," metros"
 
 """
 Teste Satélite 3D
