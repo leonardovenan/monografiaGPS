@@ -73,9 +73,9 @@ V2 = [V2x, V2y, V2z]
 V3 = [V3x, V3y, V3z]
 V4 = [V4x, V4y, V4z]
 
-V = np.dot(V2,(np.cross(V3,V4)))
+Ve = np.dot(V2,(np.cross(V3,V4)))
 
-if(V==0):     
+if(Ve==0):     
     V2x = X2 - X1
     V3x = X2 - X3
     V4x = X2 - X4
@@ -90,9 +90,9 @@ if(V==0):
     V3 = [V3x, V3y, V3z]
     V4 = [V4x, V4y, V4z]
     
-    V = np.dot(V2,(np.cross(V3,V4)))
+    Ve = np.dot(V2,(np.cross(V3,V4)))
     
-if(V==0):     
+if(Ve==0):     
     V2x = X3 - X1
     V3x = X3 - X2
     V4x = X3 - X4
@@ -107,9 +107,9 @@ if(V==0):
     V3 = [V3x, V3y, V3z]
     V4 = [V4x, V4y, V4z]
     
-    V = np.dot(V2,(np.cross(V3,V4)))
+    Ve = np.dot(V2,(np.cross(V3,V4)))
     
-if(V==0):     
+if(Ve==0):     
     V2x = X4 - X1
     V3x = X4 - X3
     V4x = X4 - X2
@@ -124,15 +124,11 @@ if(V==0):
     V3 = [V3x, V3y, V3z]
     V4 = [V4x, V4y, V4z]
     
-    V = np.dot(V2,(np.cross(V3,V4)))
+    Ve = np.dot(V2,(np.cross(V3,V4)))
 
-if(V==0):
+if(Ve==0):
     print "\nValores inválidos\nTente Novamente!\n"
     sys.exit()
-
-#Correção
-
-e = ((3*v**2)/float((2*c**2)) - V**2/float((2*c**2)) - (G*M)/float((R*c**2)))
 
 #Distancia sem correção
 
@@ -190,6 +186,9 @@ print "Y = ",Y
 print "Z = ",Z
 
 ###########################################################################################################
+#Correção
+
+e = ((3*v**2)/float((2*c**2)) - V**2/float((2*c**2)) - (G*M)/float((R*c**2)))
 
 #Distancia com correção
 
