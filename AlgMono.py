@@ -19,9 +19,10 @@ V = 465 # velocidade de rotação da Terra (m/s)
 M = 5972e24 # Massa da Terra (kg)
 R = 6371000 # Raio da Terra (m)
 G = 6.67408e-11 # Constante Gravitacional Universal (m^3 kg^-1 s^-2)
+g = 9.80665 #m/s^2
 
-#tempos
-
+#tempos - tais tempos não são únicos, são apenas exemplos
+#para facilitar...
 tr1 = 0.00505783 #tempo de recepção
 tr2 = 0.00923206
 tr3 = 0.00836090
