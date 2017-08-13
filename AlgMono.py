@@ -300,7 +300,7 @@ X =  -260372212.948
 Y =  71181985.9993
 Z =  21149732.1516
 
-A diferença de pontos sem e com a correção é =  206.307343193
+A diferença de pontos sem e com a correção é =  206.307343193 metros
 
 """
 
